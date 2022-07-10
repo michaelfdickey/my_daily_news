@@ -31,7 +31,8 @@ def get_news(topic, from_date, to_date, language='en', api_key=api_key):
     articles = content['articles']
     
     for article in articles:
-        print("> ", article['title'])   
+        print("> ", article['title'])
+        print("   ", article['url'])
 
     #for i in range(len(content['articles'])):
     #    print('> ', content['articles'][i]['title'])
@@ -49,6 +50,7 @@ today_string = get_dates()
 topics = ['covid china', 'nuclear energy', 'spacex', 'james webb', 'nuclear fusion']
 
 for topic in topics:
+    print("")
     print(topic)
     get_news(topic=topic, from_date=today_string, to_date=today_string)
 
