@@ -1,5 +1,8 @@
 import os
 import requests
+import time
+from datetime import date
+from datetime import datetime 
 
 """
 v 1.0
@@ -27,12 +30,26 @@ def get_news(topic, from_date, to_date, language='en', api_key=api_key):
     
     articles = content['articles']
     
-    #for article in articles:
-    #    print("> ", article['title'])   
+    for article in articles:
+        print("> ", article['title'])   
 
-    for i in range(len(content['articles'])):
-        print('> ', content['articles'][i]['title'])
+    #for i in range(len(content['articles'])):
+    #    print('> ', content['articles'][i]['title'])
         
-get_news(topic='covid china', from_date='2022-6-27', to_date='2022-6-28')
-#print(topic_search_result)
+def get_dates():
+    today = date.today()
+    #print(" today is: ", today)
+    #print(type(today))
+    today_string = str(today)
+    #print(repr(today_string))
+    return today_string
+
+today_string = get_dates()
+
+topics = ['covid china', 'nuclear energy', 'spacex', 'james webb', 'nuclear fusion']
+
+for topic in topics:
+    print(topic)
+    get_news(topic=topic, from_date=today_string, to_date=today_string)
+
 
