@@ -47,7 +47,9 @@ def get_dates():
 
 today_string = get_dates()
 
-topics = ['covid china', 'nuclear energy', 'spacex', 'james webb', 'nuclear fusion']
+topics = ['covid china', 'nuclear energy', 'spacex', 'james webb', 'nuclear fusion', 'inflation', 'real estate', 'sp 500']
+
+print(" Daily News Delivery for", today_string)
 
 for topic in topics:
     print("")
