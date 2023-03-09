@@ -158,3 +158,9 @@ print("content is: ", content)
 yag = yagmail.SMTP(sender,email_password )                      # create an instance of the SMTP object isntance using the SMTP class
 yag.send(to=receiver, subject=subject, contents=content)
 print("email sent")
+
+"""
+print(api_key)
+print(api_key_weather)
+print(email_password)
+"""
