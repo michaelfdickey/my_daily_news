@@ -30,6 +30,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           pip install yagmail
-          pip install os
           python main.py
 
