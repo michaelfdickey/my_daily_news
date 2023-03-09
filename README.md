@@ -18,3 +18,4 @@ To use:
 
 1) create API key for news from https://newsapi.org/ and enter the API key as an Actions secret called `APIKEY` just to run the program and as a codespaces secret `APIKEY` if you want to develop
 2) create an API for weather at https://openweathermap.org/api and create `API_KEY_WEATHER`
+3) create a gmail app password and put it in a secret `GMAIL_APP_PWD`
