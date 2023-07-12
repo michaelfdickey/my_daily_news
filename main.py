@@ -93,7 +93,7 @@ weather_content = get_weather(api_key_weather)
 forecast = get_forecast(api_key_weather)
 from_and_to_dates = get_dates()
 
-topics = ['covid china', 'nuclear energy', 'spacex', 'james webb', 'nuclear fusion', 'inflation', 'real estate', 'sp 500', 'blue origin', 'seattle']
+topics = ['covid china', 'nuclear energy', 'spacex', 'james webb', 'nuclear fusion', 'inflation', 'real estate', 'sp 500', 'blue origin', 'seattle', 'stem cell']
 
 #build temperature display lists
 todays_temps = []
