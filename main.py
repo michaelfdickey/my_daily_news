@@ -93,7 +93,7 @@ weather_content = get_weather(api_key_weather)
 forecast = get_forecast(api_key_weather)
 from_and_to_dates = get_dates()
 
-topics = ['covid china', 'nuclear energy', 'nuclear fission', 'small modular reactor', 'nuclear fusion', 'spacex', 'james webb', 'inflation', 'real estate', 'sp 500', 'blue origin', 'seattle', 'stem cell', 'superconductor', 'israel', 'palestine', 'hamas', 'open ai', 'microsoft', 'github', 'akira']
+topics = ['china', 'nuclear energy', 'nuclear fission', 'small modular reactor', 'nuclear fusion', 'spacex', 'james webb', 'inflation', 'real estate', 'sp 500', 'blue origin', 'seattle', 'stem cell', 'superconductor', 'israel', 'palestine', 'hamas', 'open ai', 'microsoft', 'github', 'akira', 'cryonics']
 
 #build temperature display lists
 todays_temps = []
