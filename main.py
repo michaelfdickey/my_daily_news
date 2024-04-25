@@ -45,14 +45,8 @@ def get_news(topic, from_date, to_date, language='en', api_key=api_key, content=
     
     #print("content is: ", content)
     for article in articles:
-        print("> ", article['title'])
-        content = content + "> " + article['title'] + "\n"
-        print("   ", article['url'])
-        content = content + "  " + article['url'] + "\n"
+        content += f"<a href='{article['url']}'>{article['title']}</a><br>\n"
     #print("content is now: ", content)
-
-    #for i in range(len(content['articles'])):
-    #    print('> ', content['articles'][i]['title'])
 
     return content
         
@@ -156,7 +150,7 @@ print("content is: ", content)
 
 ### send email ###
 yag = yagmail.SMTP(sender,email_password )                      # create an instance of the SMTP object isntance using the SMTP class
-yag.send(to=receiver, subject=subject, contents=content)
+yag.send(to=receiver, subject=subject, contents=content, subtype='html')  # Set email content type to HTML
 print("email sent")
 
 """
