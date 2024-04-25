@@ -150,7 +150,8 @@ print("content is: ", content)
 
 ### send email ###
 yag = yagmail.SMTP(sender,email_password )                      # create an instance of the SMTP object isntance using the SMTP class
-yag.send(to=receiver, subject=subject, contents=content, subtype='html')  # Set email content type to HTML
+yag.send(to=receiver, subject=subject, contents=content)  # Set email content type to HTML
+#yag.send(to=receiver, subject=subject, contents=content, subtype='html')  # Set email content type to HTML
 print("email sent")
 
 """
