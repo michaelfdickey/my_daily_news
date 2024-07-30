@@ -2,7 +2,7 @@
 
 Program that emails you a clean text only list of news by topic on a scheduled interval, daily, weekly, monthly. 
 
-## notes
+## notes 
  
 getting actions secrets and using them in codespace env:
 https://github.com/michaelfdickey/CIS553-CurrencyConverter-statuschecks
