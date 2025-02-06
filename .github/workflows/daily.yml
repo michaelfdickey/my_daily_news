@@ -36,4 +36,4 @@ jobs:
         run: |
           pip install requests
           pip install yagmail
-          python main.py
+          python main.py 
