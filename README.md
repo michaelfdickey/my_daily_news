@@ -43,3 +43,5 @@ api_key = os.getenv('APIKEY')
 api_key_weather = os.getenv('API_KEY_WEATHER')
 email_password = os.getenv('GMAIL_APP_PWD')
 ```
+
+edit
